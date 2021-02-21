@@ -6225,11 +6225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\Trabajos\\asp.net\\BackEndCrud\\BackEndCrud\\BackEndCrud.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\Trabajos\\asp.net\\Prueba\\BackEndCrud\\BackEndCrud\\BackEndCrud.csproj",
       "projectName": "BackEndCrud",
-      "projectPath": "C:\\Users\\user\\Documents\\Trabajos\\asp.net\\BackEndCrud\\BackEndCrud\\BackEndCrud.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\Trabajos\\asp.net\\Prueba\\BackEndCrud\\BackEndCrud\\BackEndCrud.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\Trabajos\\asp.net\\BackEndCrud\\BackEndCrud\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\Trabajos\\asp.net\\Prueba\\BackEndCrud\\BackEndCrud\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
