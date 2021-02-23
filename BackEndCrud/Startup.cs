@@ -30,23 +30,26 @@ namespace BackEndCrud
             services.AddDbContext<ApplicationDbContext>(options => 
                                      options.UseSqlServer(Configuration.GetConnectionString("Connection")));
 
-            services.AddCors(options => options.AddPolicy("AllowWebApp",
-                                         builder => builder.AllowAnyOrigin()
-                                         .AllowAnyHeader()
-                                         .AllowAnyMethod()));
+            services.AddCors();
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            app.UseCors(options => 
+            {
+                options.WithOrigins("http://localhost:4200");
+                options.AllowAnyMethod();
+                options.AllowAnyHeader();
+
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
-
-            app.UseCors("AllowWebApp");
 
             app.UseHttpsRedirection();
 
